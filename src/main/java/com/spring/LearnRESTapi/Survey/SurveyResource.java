@@ -69,7 +69,7 @@ public class SurveyResource {
 		// /surveys/{surveyId}/questions/{questionId}
 		URI location = ServletUriComponentsBuilder.fromCurrentRequest()
 				.path("/{questionId}").buildAndExpand(questionId).toUri();
-		return ResponseEntity.created(location ).build();
+		return ResponseEntity.created(location).build();
 		
 	}
 
